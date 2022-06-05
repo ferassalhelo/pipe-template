@@ -1,321 +1,457 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>pipe</title>
-    <script
-      src="https://kit.fontawesome.com/289b476fa4.js"
-      crossorigin="anonymous"
-    ></script>
+<html lang="en" dir="rtl">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body class="position-relative">
-    <nav
-      id="nav"
-      class="navbar navbar-expand-lg bg-black text-white px-3 pb-2 pt-0 mb-4 position-fixed w-100"
-    >
-      <div class="container m-auto">
-        <a class="navbar-brand mx-4 fs-1 fw-black pt-0" href="#">
-          <span class="animation"></span>pipe</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="fas fa-bars text-white"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  mb-2 mb-lg-0  text-white">
-            <li class="nav-item actv activ ">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Products</a
-              >
-            </li>
-            <li class="nav-item actv">
-              <a class="nav-link" href="#">Company</a>
-            </li>
-            <li class="nav-item actv">
-              <a class="nav-link " href="#">
-                Resources
-              </a>
-            </li>
-            <li class="nav-item actv">
-              <a class="nav-link " href="#">Customers</a>
-            </li>
-            <li class="nav-item actv">
-              <a class="nav-link " href="#">Login</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>جدران</title>
+  <script src="https://kit.fontawesome.com/289b476fa4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@400;900;1000&family=Tajawal:wght@300;400;500;700;800;900&family=Vazirmatn:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-          <button class="btn btn-light px-5 py-2 bt1 ms-4 " type="submit">
-            Get Started
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <!-- section intro -->
-
-    <section class="container m-auto intro position-relative">
-      <h6 class="text-green uppercase text-center py-4">
-        hire engineers with confidence
-      </h6>
-      <h2 class="fs-1 text-capitalize text-white text-center fw-black">
-        High quality services
-      </h2>
-      <div class="fs-2 py-4 fw-bold text-center text-white">
-        <span class="">Hello, we are the FTC for </span>
-        <span id="text" class="text-secondary"></span>
-      </div>
-      <p class="text-secondary fw-bold fs-5 text-center px-5 mx-5">
-        Hello, we are the FTC for Web Applications team. We provide high quality
-        services using the latest existing technology.
-      </p>
-      <div class="text-center">
-        <button
-          class="btn text-black  bg-green fw-bolder px-5 py-2 text-capitalize my-4"
-        >
-          get started <i class="fas fa-arrow-right "></i>
-        </button>
-      </div>
-      <div class="navbarAnimation"></div>
-    </section>
-
-    <!-- section dashpord -->
-
-    <section class="container-fluid text-center mt-5 divDash position-relative">
-      <div class="divImg m-auto">
-        <img
-          src="./imges/vue-dashboard-black-screen.jpeg"
-          class="img "
-          alt="img"
-        />
-      </div>
-    </section>
-
-    <!-- section foure -->
-
-    <section
-      class="container-fluid bg-black2 row align-items-center p-5 text-md-left m-0 position-relative "
-    >
-      <div class="col-md-6 col-12 ">
-        <h2 class="fs-1 text-capitalize text-white fw-black">
-          One click, instant payout
-        </h2>
-        <p class="fs-4 fw-bolder pt-3 text-secondary">
-          <span class="text-white">it`s that easy.</span> Convert your recurring
-          revenue streams into instant upfront capital anytime.
-        </p>
-      </div>
-      <div class="col-md-6 col-12 ">
-        <img
-          src="./imges/0a8e8393936603.5e7cb83754290.jpg"
-          alt="dispound"
-          class="img"
-        />
-      </div>
-      <div class="navbarAnimationleft"></div>
-    </section>
-
-    <!-- section five -->
-
-    <section
-      class="container-fluid bg-black row align-items-center p-5 text-md-left m-0 position-relative"
-    >
-      <div class="col-md-6 col-12 order-2 ">
-        <h2 class="fs-1 text-capitalize text-white fw-black">
-          More customers, no disruptions
-        </h2>
-        <p class="fs-4 fw-bolder pt-3 text-secondary pr-5">
-          <span class="text-white">It’s frictionless. </span> Get paid upfront
-          without discounts.
-        </p>
-      </div>
-      <div class="col-md-6 col-12 order-1">
-        <img src="./imges/images.png" alt="dispound" class="img" />
-      </div>
-    </section>
-    <!-- slider from bootstrap -->
-
-    <section class="container-fluid bg-black2 py-5 px-5 position-relative">
-      <h2 class="fs-1 text-capitalize text-white text-center fw-black my-5 ">
-        some of our work
-      </h2>
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark slide text-center mx-auto"
-        data-bs-ride="carousel"
-        style="max-height: 600px; max-width: 1200px"
-      >
-        <div class="carousel-indicators ">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active bg-white"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            class="bg-white"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            class="bg-white"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./imges/Beid-Bootstrap-4-Admin-Dashboard-Template.png"
-              class="d-block w-100"
-              alt="img"
-              style="max-height: 500px"
-            />
-            <div class="carousel-caption d-none d-md-block text-white">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item " data-bs-interval="10000">
-            <img
-              src="./imges/attachment.jpg"
-              class="d-block w-100"
-              style="max-height: 500px"
-              alt="img"
-            />
-            <div class="carousel-caption d-none d-md-block text-white">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="./imges/vue-dashboard-black-screen.jpeg"
-              class="d-block w-100"
-              alt="img"
-              style="max-height: 500px"
-            />
-            <div class="carousel-caption d-none d-md-block text-white">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <i
-            class="fas fa-chevron-left "
-            style="color:  #00df9a ;font-size: 40px"
-          ></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <i
-            class="fas fa-chevron-right"
-            style="color: #00df9a;font-size: 40px"
-          ></i>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="navbarAnimation"></div>
-    </section>
-
-    <!-- vedio -->
-
-    <section class="container-fluid text-center m-0">
-      <video
-        class="w-100"
-        controls
-        autoplay
-        muted
-        loop
-        playsinline
-        style="pointer-events: none;"
-      >
-        <source src="./imges/Seo - 11473.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
-
-    <!--  end section  -->
-
-    <section class="container text-center my-5 position-relative">
-      <h2 class="fs-1 text-capitalize text-white fw-black my-5 pt-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing.
-      </h2>
-      <p
-        class="text-secondary fw-bold fs-3 text-center px-5 m-auto"
-        style="max-width:1000px;"
-      >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. sunt
-        repellendus quisquam sapiente dignissimos nulla magni, reprehenderit
-        modi quia incidunt exercitationem iste commodi velit ipsam culpa.
-        Voluptatibus, distinctio dolorum?
-      </p>
-      <button
-        class="btn text-black  bg-green fw-bolder px-5 py-2 text-capitalize my-5"
-      >
-        get started <i class="fas fa-arrow-right "></i>
+<body class="position-relative">
+  <nav id="nav" class="navbar navbar-expand-xl bg-black text-white px-3 pb-2 pt-0 mb-4 position-fixed w-100">
+    <div class="container m-auto justify-content-center">
+      <a class="navbar-brand mx-4 fs-1 fw-black pt-0" href="#">
+        <!-- <span class="animation"></span> -->
+        <img src="./imges/لوغو جدران-01 (1).png" alt="logo" width="180px" height="">
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars text-white"></span>
       </button>
-      <div class="navbarAnimationleft"></div>
-    </section>
-    <!-- footer -->
-    <footer class="bg-black2 text-center text-white fs-5 py-4 fw-bolder">
-      © 2021 Pipe Technologies, Inc. by FTC.
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/typed.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-xl-0  text-white">
+          <li class="nav-item actv activ ">
+            <a class="nav-link active" aria-current="page" href="#">Products</a>
+          </li>
+          <li class="nav-item actv">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+          <li class="nav-item actv">
+            <a class="nav-link " href="#">
+              Resources
+            </a>
+          </li>
+          <li class="nav-item actv">
+            <a class="nav-link " href="#">Customers</a>
+          </li>
+          <li class="nav-item actv">
+            <a class="nav-link " href="#">Login</a>
+          </li>
+        </ul>
+
+        <button class="btn btn-light px-5 py-2 bt1 ms-4 " type="submit">
+          Get Started
+        </button>
+      </div> -->
+    </div>
+  </nav>
+
+  <!-- section intro -->
+  <section class="container m-auto intro position-relative">
+    <h6 class="text-green uppercase text-center py-4 fs-2">
+      جدران لخلفيات التصوير
+    </h6>
+    <h2 class="fs-1 text-capitalize text-white text-center fw-black">
+      High quality services
+    </h2>
+    <div class="fs-2 py-4 fw-bold text-center text-white">
+      <span class="">خلفيات تصوير منتجات و اطعمه من جدران </span>
+      <span id="text" class="text-secondary"></span>
+    </div>
+    <p class="text-secondary fw-bold fs-3 text-center px-0 px-lg-5 mx-5">
+      المنتج الذي سيحبه الملايين ويساعد في حل مشكلة ازلية عند صناع المحتوى والتجار والمصورين وريادي الاعمال .. </p>
+    <div class="text-center">
+      <button class="btn text-black  bg-green fw-bold px-5 fs-4 py-2 text-capitalize my-4">
+        تواصل معنا <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+          style="width: 20px ; margin-right:8px ; height: 20px; display: inline-block;">
+          <path
+            d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+        </svg>
+      </button>
+    </div>
+    <div class="navbarAnimation"></div>
+  </section>
+
+  <!-- section dashpord -->
+  <section class="container m-auto text-center mt-5 position-relative  pb-5">
+    <!-- <div class="col-12 col-lg-6">
+      <img src="./imges/Artboard 3.png" class="img" alt="img" />
+    </div> -->
+    <img src="./imges/Artboard 1.png" class="img" alt="img" />
+  </section>
+
+  <!-- section foure -->
+  <section class="container-fluid bg-black2 row align-items-center p-5 text-md-left m-0 position-relative ">
+    <div class="col-md-6 col-xl-7 col-12 text-center text-md-end p-0 pe-md-5">
+      <h2 class="fs-1 text-capitalize text-white fw-black">
+        خلفيات تصوير </h2>
+      <p class="fs-4 fw-bolder pt-3 text-secondary"> <span class="text-white">
+          بألوان مختلفة واشكال اقرب للواقع </span> مطبوعة على خامات مطفية وبألوان متنوعة ونسبة انعكاس الضوء منخفضة
+        جدا . <br>• تساعد لخلق تجربة تصوير منتجات سهلة وسلسة .. </p>
+    </div>
+    <div class="col-md-6 col-xl-4 col-12 "> <img src="./imges/Artboard 4.png" alt="dispound" class="img" />
+
+    </div>
+    <div class="navbarAnimationleft"></div>
+  </section>
+
+  <!-- section five -->
+  <section
+    class="container-fluid bg-black row align-items-center p-5 text-md-left m-0 position-relative justify-content-between">
+    <div class="col-md-6 col-xl-6 col-12 order-2 p-0 ps-md-5 text-center text-md-end">
+      <h2 class="fs-1 text-capitalize text-white fw-black"> خلفيات تصوير منتجات
+
+      </h2>
+      <p class="fs-4 fw-bolder pt-3 text-secondary pr-5">• مطبوعة بجوده عالية وبصور اكثر واقعيه للتصوير المنزلي وتصوير
+        استديوهات <br>• ضد الماء اذا تم الاعتناء بها وفق التعليمات
+
+      </p>
+    </div>
+    <div class="col-md-6 col-xl-4 col-12  order-1">
+      <img src="./imges/Artboard 8.png" alt="dispound" class="img" />
+    </div>
+  </section>
+
+  <!-- section six -->
+  <section class="container-fluid bg-black2 py-5 position-relative">
+    <h1 class="text-green text-center my-5">فوائد خلفيات تصوير من جدران لصناع المحتوى والتجار</h1>
+    <div class="swiper mySwiper container m-auto py-5">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide border border-y rounded-3">
+          <div class="bg-black2 m-h">
+            <img src="./imges/Artboard 1 (1).png" class="rounded-top" width="100%" alt="img">
+            <p class="p-4 fs-5 text-white-50">تصوير المنتجات مهم جدا لإخراج الصورة بطريقة تزيد من نسبة اقناع العميل
+              بالشراء
+              الا
+              انك بحاجة
+              لتوفير مبالغ كثيرة وبالأخص اذا كنت في بداية مشروعك الناشئ من خلال هذا المنتج خلفيات تصوير احترافية سوف
+              تتمكن
+              من
+              توفير مبالغ كبيرة في تصوير المنتجات </p>
+          </div>
+        </div>
+        <div class="swiper-slide border border-y rounded-3">
+          <div class="bg-black2 m-h ">
+            <img src="./imges/Artboard 8.png" class="rounded-top" width="100%" alt="img">
+            <p class="p-4 fs-5 text-white-50"> كما تتمكن من توفير المزيد والمزيد من الوقت في انتظار مصور المنتجات من
+              الانتهاء من تصوير المنتجات وتعديلها او حتى انتظار حتى يحين دورك لتصويرها بحيث تتمكن من تصويرها بنفسك في
+              أي
+              وقت تريده انت والتمكن من مواكبة المواسم المساهمة في زيادة عمليات البيع لمنتجاتك </p>
+          </div>
+        </div>
+        <div class="swiper-slide border border-y rounded-3">
+          <div class="bg-black2 m-h">
+            <img src="./imges/Artboard 6.png" class="rounded-top" width="100%" alt="img">
+            <p class="p-4 fs-5 text-white-50">صور منتجاتك بشاشه جوالك عن طريقة خلفية تصوير سلسة واصنع المزيد والمزيد
+              من المحتوى المختلف وباحترافية عالية في حسابات التواصل الاجتماعي .</p>
+          </div>
+        </div>
+        <div class="swiper-slide border border-y rounded-3">
+          <div class="bg-black2 m-h">
+            <img src="./imges/Artboard 9.png" class="rounded-top" width="100%" alt="img">
+            <p class="p-4 fs-5 text-white-50"> كن دائم الحضور في حساباتك والاستمرار بظهورك لهم من خلال التقاط اجمل
+              اللحظات على خلفية تصوير توفر لك زاوية تصوير مميزة مما يزيد من تواصلك مع عملائك وزيادة فرص احتماليه ارتفاع
+              البيع لمنتجاتك </p>
+          </div>
+        </div>
+        <div class="swiper-slide border border-y rounded-3">
+          <div class="bg-black2 m-h">
+            <img src="./imges/Artboard 7.png" class="rounded-top" width="100%" alt="img">
+            <p class="p-4 fs-5 text-white-50"> كن انت الزعيم في الترند وذلك بإنتاج صور وفيديوهات مختلفة على خلفية
+              تصوير أقرب للواقع وصناعة محتوى مستمر يساهم من الوصول لشريحة اكبر من عملائك المحتملين . </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+  </section>
+
+  <!-- sven section -->
+  <section class="container m-auto row my-5">
+    <h1 class="text-green text-center my-5"> فوائد خلفيات تصوير المنتجات من جدران لمصوري المنتجات </h1>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center"> خلق المزيد والمزيد
+        من تكوينات الصور
+        المختلفة وذلك من خلفيات تصوير احترافية صلبة وذات واقعية اكبر وقريبه جدا من اشكال وجدران وارضيات مختلفة في
+        الطبيعة</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center"> هذه الخلفيات تساعدك
+        في توفير المزيد من الالواح حيث يوجد 4 خلفيات في
+        لوحين صلبة مما يساعدك في تقليل المزيد والمزيد من اقتناء اشكال واحجام مختلفة من خلفيات التصوير المختلفة لتصوير
+        المنتجات</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center"> خلق المزيد والمزيد
+        من تكوينات الصور
+        هذه الخلفيات خفيفة الوزن حيث سماكة اللوح الواحد 3 ملم فقط </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center"> وجود الدعامات
+        المثبتة للوحين يساعدك في التقليل من الادوات والاستاندات
+        الكبيرة المساعدة في تثبيت الواح الخلفيات المختلفة</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center"> خلفيات تصوير مع
+        جدران تمكنك من توفير مقاسات غير موجودة في السوق لنفس
+        المنتج كمقاس 60في80 ومقاس 80في 80 لتصوير المنتجات الأكبر حجما وتصوير الفيديو والمطبوعة من الجهتين وبتصاميم
+        متناسقة </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">في لوحين فقط تمتلك
+        اربع خلفيات تصوير مختلفة مع إمكانية تنسيق اربع زوايا
+        تصوير مختلفة متناسقة مع بعضها البعض</div>
+    </div>
+  </section>
+
+  <!-- section 8  -->
+  <section class="container-fluid  bg-black2 py-5">
+    <div class="container m-auto row my-5">
+
+      <h1 class="text-green text-center my-5">فوائد خلفية تصوير المنتجات لموزعي المنتج في متاجرهم ونقاط بيعهم </h1>
+      <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+        <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center pill"> التفرد بوجود
+          أشكال
+          مختلفة حسب الطلب لأشكال الخلفيات وبألوان مختلفة</div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+        <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center pill"> تنسيق
+          الخلفيات في
+          كل لوحين بحيث تكون متناسقة مع بعضها البعض </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+        <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center pill"> إمكانية
+          التفرد
+          بصناعه علامة تجارية خاصة فيك وطباعه الاسم على الكرتون الخارجي </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+        <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center pill"> إمكانية تغليف
+          كل
+          مجموعه لوحدها والمجموعة تتكون من لوحين مع زوج من الدعامات بحيث يتم تغليف كل مجموعة تغليف خاص </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+        <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center pill"> إمكانية تصنيف
+          كل
+          كرتون بما يحتويه من انواع الخلفيات التي بداخله وذلك بوضع وصف خارجي على الكرتون بحيث تتمكن من التسليم الفوري
+          لعملائك</div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+        <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center pill"> إمكانية
+          تزويدك
+          بصور للمنتجات مع فديو توضيحي للتركيب ووصف للمنتج بحيث يمكنك من اضافته بمتجرك اذا لزم الأمر </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 9 -->
+  <section class="container m-auto row my-5">
+    <h1 class="text-green text-center my-5">مزايا خلفيات تصوير منتجات من جدران </h1>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center"> • خلفيات مطبوعة
+        يدويا وبجودة عالية جدا على الواح من الخشب الليفي متوسط الكثافة والذي تم تشكيل جزيئاته عن طريق تعريضه لدرجة حرارة
+        وضغط عاليين </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• سهلة التنقل من مكان
+        لمكان ( في جلسات التصوير - واليوميات) سواء كنت مدوناً أو بائعاً أو مصورا أو مسوقاً فإن هذا الخلفية ستكون ضرورية
+        لصورتك</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• يتوفر عدة مقاسات
+        مختلفة مقصوصة بالليزر من الأطراف عن طريق مكائن خاصة واطراف منحنية لتوفير حماية أطول .</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• يوجد مع كل لوحين
+        زوج من الدعامات المساعدة على تثبيت الجدارية بالأرضية.</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• خلفيات تصوير
+        المنتجات مقاومة الاوساخ والبقع والماء مع امكانية تنظيفها باستخدام ( قطعة قماش مبللة قليلاً بالماء )</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• تم تنسيقها بعنايه
+        فائقة جدا بحيث كل جهة تتناسب وتتناسق بشكل مباشر مع الجهتين الأخريات للوح الآخر</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• تساعدك في عرض
+        التكوين ومنتجاتك التي تملكها و إثارة اعجاب متابعين الانستغرام المهتمين بما تقدمه</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• تساعدك على التقاط
+        صور مذهلة باحترافية كبيرة و بأسهل الطرق واقل الأدوات</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• تصاميم كلا الجانبين
+        مختلفة و مصممة خصيصا لتلبي احتياجات العميل </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• خفيفة الوزن مع
+        إمكانية اقتناء اربع خلفيات مميزة في لوحين فقط </div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• مطبوعة على خامات
+        مطفية وبألوان متنوعة ونسبة انعكاس الضوء منخفضة جدا .</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl-4 text-white fs-5 p-4 p-md-5">
+      <div class="shadow-y text-center p-3 h-100 d-flex justify-content-center align-items-center">• تستخدم لتصوير
+        المنتجات والأطعمة</div>
+    </div>
+  </section>
+
+  <!-- slider from bootstrap -->
+  <section class="container-fluid bg-black2 py-5 px-5 position-relative">
+    <h2 class="fs-1 text-capitalize text-white text-center fw-black my-5 text-green">
+      نقدم لكم أجود أنواع المنتجات
+    </h2>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide text-center mx-auto" data-bs-ride="carousel"
+      style="max-height: 600px; max-width: 1200px">
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active bg-white"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button class="bg-white" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button class="bg-white" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imges/Artboard 3 (1).png" class="d-block w-100" alt="img" style="max-height: 500px" />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Third slide label</h5>
+            <p>
+              Some representative placeholder content for the third slide.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item " data-bs-interval="10000">
+          <img src="./imges/Artboard 1.png" class="d-block w-100" style="max-height: 500px;  " alt="img" />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>First slide label</h5>
+            <p>
+              Some representative placeholder content for the first slide.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./imges/بنر.png" class="d-block w-100" alt="img" style="max-height:500px;" />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h5>Second slide label</h5>
+            <p>
+              Some representative placeholder content for the second slide.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <i class="fas fa-chevron-left " style="color:  #e0cf00 ;font-size: 40px"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <i class="fas fa-chevron-right" style="color: #e0cf00;font-size: 40px"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="navbarAnimation"></div>
+  </section>
+  <!-- qustion section -->
+  <section class="container m-auto text-white fs-4 py-5">
+    <h1 class="text-green">الأسئلة المتكررة </h1>
+    <p class="my-4">هل هي مجموعه او كل قطعه على حدا..؟ <br> •
+      هي عبارة عن مجموعه أي عبارة عن لوحين مع زوج من الدعامات مغلفة تغليف خاص ..
+    </p>
+    <p class="my-4">هل هي ضد الماء..؟ <br>
+      • ضد الماء والبقع ومقاومة للأوساخ والماء يمكن مسحها وتنظيفها
+      بقطعة قماش
+    </p>
+    <p class="my-4">هل يوجد مقاسات..؟ <br>•
+
+      يتوفر مقاسين حاليا 60في60و 60في80
+    </p>
+    <p class="my-4">
+      هل يتم تصميم اشكال مختلفة ..؟ <br>•
+      يتم تصميم اشكال مختلفة حسب الطلب ولكن بقيمة خاصة فتجربة المنتج يحتاج وقت وعدة محاولات للطباعة وتكرارها للوصول الى
+      شكل واختبار نهائي له .. ومن ثم نرسلها لك لاعتماد الشكل قبل الإنتاج النهائي ..
+    </p>
+    <h1 class="text-green mt-5 fs-3 text-center">وأخيرا تواصل معنا الآن قبل الجميع للحصول على منتج منفرد في السوق كخامة
+      وتصاميم خاصة
+      وميزة تنافسية حصرية</h1>
+  </section>
+  <!-- vedio -->
+  <section class="container-fluid text-center m-0">
+    <video class="w-100" controls autoplay muted loop playsinline style="pointer-events: none;">
+      <source src="./imges/Seo - 11473.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!--  end section  -->
+  <!-- <section class="container text-center my-5 position-relative">
+    <h2 class="fs-1 text-capitalize text-white fw-black my-5 pt-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing.
+    </h2>
+    <p class="text-secondary fw-bold fs-3 text-center px-5 m-auto" style="max-width:1000px;">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. sunt
+      repellendus quisquam sapiente dignissimos nulla magni, reprehenderit
+      modi quia incidunt exercitationem iste commodi velit ipsam culpa.
+      Voluptatibus, distinctio dolorum?
+    </p>
+    <button class="btn text-black  bg-green fw-bolder px-5 py-2 text-capitalize my-5">
+      get started <i class="fas fa-arrow-right "></i>
+    </button>
+    <div class="navbarAnimationleft"></div>
+  </section> -->
+  <!-- footer -->
+  <footer class="bg-black2 text-center text-white fs-5 py-4 fw-bolder">
+    © 2021 Pipe Technologies, Inc. by FTC.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="./js/typed.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        891: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1224: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+
+      },
+    });
+  </script>
+</body>
+
 </html>

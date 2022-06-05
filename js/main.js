@@ -1,7 +1,7 @@
 var typed = new Typed("#text", {
-  strings: [`web applications`],
+  strings: [`خلفيات للتصوير المنزلي و خلفيات تصوير استديوهات `],
   typeSpeed: 100,
-  loop: true
+  loop: true,
 });
 var li = document.querySelectorAll("li");
 
