@@ -9,7 +9,7 @@ body {
   font-family: 'Almarai', sans-serif !important;
   margin: 0;
   font-family: sans-serif;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -58,13 +58,19 @@ ul {
   padding-top: 180px;
 }
 .bg-black {
-  background-color: black;
+  background-color: rgb(255, 255, 255) !important;
 }
 .bg-black2 {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(240, 240, 240);
 }
 .text-black {
   color: black;
+}
+.text-white{
+  color:black !important;
+}
+.text-white-50{
+  color:rgb(29, 29, 29) !important
 }
 a,
 li,
@@ -235,4 +241,12 @@ body > section:nth-child(6) > div.swiper.mySwiper.container.m-auto.swiper-initia
 }
 .m-h{
   min-height: 685px !important;
+}
+table, th, td {
+  border: 1px solid #e0cf00;
+  border-collapse: collapse;
+}
+td,th{width: 250px; padding: 15px;}
+th:nth-child(even),td:nth-child(even) {
+  background-color: #ffea0072;
 }
